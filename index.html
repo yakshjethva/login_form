@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Hidden Login Form | Coderider</title>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!--  <link rel="stylesheet" type="text/css" href="fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-solid.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
+	<title></title>
 </head>
 <body>
-    <div class="container" onclick="onclick">
-        <div class="top"></div>
-        <div class="bottom"></div>
-        <div class="center">
-            <h2>Please Sign In</h2><input type="email" placeholder="email" /><input type="password" placeholder="password" />
-            <button>Login</button>
+	<div id="app-cover">
+  <h1 id="heading">Sign Up</h1>
+  <form method="post" action="" autocomplete="off">
+    <div id="inp-box-cover">
+      <div id="inp-padd">
+        <div class="inp-box" id="email">
+          <input type="email" class="inp" placeholder="Your email address" spellcheck="false" autocomplete="off">
         </div>
+        <div class="inp-box" id="username">
+          <input type="text" class="inp" placeholder="Your username" spellcheck="false">
+        </div>
+        <div class="inp-box" id="password">
+          <input type="password" class="inp" placeholder="Password (More than 5 characters)">
+        </div>
+        <div id="prev-action-btn"><i class="fas fa-chevron-circle-left"></i></div>
+        <div id="next-action-btn"><i class="fas fa-chevron-circle-right"></i></div>
+      </div>
+      <div id="progress-bar-cover">
+        <div id="progress">
+          <div id="working">Working<i class="fas fa-sync-alt fa-spin"></i></div>
+          <div id="acc-success">Account Created<i class="fas fa-check"></i><span id="init-login">Login now</span></div>
+        </div>
+      </div>
     </div>
+  </form>
+</div>
 </body>
 </html>
